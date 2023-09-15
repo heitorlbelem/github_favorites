@@ -91,8 +91,8 @@ export class FavoriteView extends Favorite {
           alt="imagem do perfil"
         />
         <p>
-          <a href="#">${name}</a>
-          <a href="#">${login}</a>
+          <a href="https://github.com/${login}">${name}</a>
+          <a href="https://github.com/${login}">${login}</a>
         </p>
       </td>
       <td>${public_repos}</td>
