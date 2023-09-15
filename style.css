@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothin: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #459eda;
+  --secondary-color: #f0f0f0;
+  --text-color: #323131;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: none;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body,
+a,
+input {
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+#app {
+  width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 3rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  height: 3.2rem;
+  padding-inline: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+
+  height: 3.2rem;
+  padding-inline: 0.8rem;
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+form button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: left;
+  font-weight: normal;
+
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+}
+
+table tr {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+table td.user img {
+  object-fit: cover;
+
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
+}
+
+table td.user a {
+  text-decoration: none;
+}
+
+table td.user a:first-child {
+  font-weight: bold;
+}
+
+table td button {
+  background: none;
+  border: none;
+  color: red;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+table td button:hover {
+  transform: scale(1.2);
+}
